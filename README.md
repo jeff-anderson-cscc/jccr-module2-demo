@@ -1,4 +1,4 @@
-# Module 2 Lab 1 -- Classes and Interfaces Demo Code Along
+# Module 2 Fundamentals of Classes and Objects Demos
 
 ## Getting Started:
 
