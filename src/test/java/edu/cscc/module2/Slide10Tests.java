@@ -19,20 +19,20 @@ public class Slide10Tests {
 
   @Test
   @DisplayName("T01 interface edu.cscc.module2.TwoDimensionalObject exists")
-  public void interfaceTwoDimObjExistsTest () {
+  public void test01 () {
     Class twoDimObj = null;
     try {
       twoDimObj = Class.forName("edu.cscc.module2.TwoDimensionalObject");
     }
     catch (ClassNotFoundException exception) {
-      fail("Class edu.cscc.module2.TwoDimensionalObject does not exist");
+      fail("Interface edu.cscc.module2.TwoDimensionalObject does not exist");
     }
-    assertTrue(twoDimObj.isInterface());
+    assertTrue(twoDimObj.isInterface(),"TwoDimensionalObject should be an interface");
   }
 
   @Test
   @DisplayName("T02 TwoDimensionalObject should have a String getDisplayName() method")
-  public void twoDimensionalObjectShouldHaveGetSDisplayNameMethodTest () throws Exception {
+  public void test02 () throws Exception {
     Class[] getterParamList = { };
     Method method = null;
     try {
@@ -46,7 +46,7 @@ public class Slide10Tests {
 
   @Test
   @DisplayName("T03 getDisplayName() should have a default impelentation")
-  public void twoDimensionalObjectGetDisplayNameShouldHaveDefaultImplentationTest () throws Exception {
+  public void test03 () throws Exception {
     Class[] getterParamList = { };
     Method method = null;
     try {
@@ -60,7 +60,7 @@ public class Slide10Tests {
 
   @Test
   @DisplayName("T04 class edu.cscc.module2.Square exists")
-  public void squareClassExistsTest () {
+  public void test04 () {
     Class twoDimObj = null;
     try {
       twoDimObj = Class.forName("edu.cscc.module2.Square");
@@ -72,7 +72,7 @@ public class Slide10Tests {
 
   @Test
   @DisplayName("T05 Square implements TwoDimensionalObject")
-  public void squareClassImplementsTwoDimensionalObjectTest () {
+  public void test05 () {
     Class twoDimObj = null;
     try {
       twoDimObj = Class.forName("edu.cscc.module2.Square");
@@ -86,15 +86,15 @@ public class Slide10Tests {
 
   @Test
   @DisplayName("T06 getDisplayName() on Square returns default value of \"2D Object\"")
-  public void squareGetDisplayNameReturnsDefaultValueTest () {
+  public void test06 () {
     // UNCOMMENT TO RUN:
-    // Square square = new Square();
-    // assertEquals("2D Object", square.getDisplayName());
+//    Square square = new Square();
+//    assertEquals("2D Object", square.getDisplayName());
   }
 
   @Test
   @DisplayName("T07 TwoDimensionalObject should have a double getArea() method")
-  public void twoDimensionalObjectShouldHaveDoubleGetAreaMethodTest () throws Exception {
+  public void test07 () throws Exception {
     Class[] getterParamList = { };
     Method method = null;
     try {
@@ -109,7 +109,7 @@ public class Slide10Tests {
 
   @Test
   @DisplayName("T08 Square has double sideLength field")
-  public void squareHasPrivateDoubleSideLenghtFieldTest () throws Exception {
+  public void test08 () throws Exception {
     Class addressClass = Class.forName("edu.cscc.module2.Square");
     Field field = addressClass.getDeclaredField("sideLength");
     assertNotNull(field);
@@ -119,7 +119,7 @@ public class Slide10Tests {
 
   @Test
   @DisplayName("T09 Square.sideLength should have a getter and setter")
-  public void fieldWidthShouldHaveGetterAndSetterTest () throws Exception {
+  public void test09 () throws Exception {
     Class[] getterParamList = { };
     Class[] setterParamList = { double.class };
     try {
@@ -136,14 +136,13 @@ public class Slide10Tests {
 
   @Test
   @DisplayName("T10 getArea() computes proper area")
-  public void squareGetAreaComputesProperAreaTest () {
-    /* UNCOMMENT TO RUN
-    Square square = new Square();
-    square.setSideLength(2.0);
-    assertEquals(4.0, square.getArea());
-    square.setSideLength(4.5);
-    assertEquals(20.25, square.getArea());
-    */
+  public void test10 () {
+    // TODO: UNCOMMENT Before Running:
+//    Square square = new Square();
+//    square.setSideLength(2.0);
+//    assertEquals(4.0, square.getArea());
+//    square.setSideLength(4.5);
+//    assertEquals(20.25, square.getArea());
   }
 
 
@@ -193,13 +192,22 @@ public class Slide10Tests {
   @Test
   @DisplayName("T15 getArea() computes proper area")
   public void test15 () {
-    /* UNCOMMENT TO RUN
-    Rectangle rectangle = new Rectangle(2.0, 3);
-    assertEquals(6.0, rectangle.getArea());
-    rectangle = new Rectangle(4, 1);
-    assertEquals(4.0, rectangle.getArea());
-    */
+    // TODO: UNCOMMENT Before Running:
+//    Rectangle rectangle = new Rectangle(2.0, 3);
+//    assertEquals(6.0, rectangle.getArea());
+//    rectangle = new Rectangle(4, 1);
+//    assertEquals(4.0, rectangle.getArea());
   }
+
+  @Test
+  @DisplayName("T16 getDisplayName() on Rectangle returns value of \"Rectangle\"")
+  public void test16 () {
+    // TODO: UNCOMMENT Before Running:
+//    Rectangle rectangle = new Rectangle(0, 0);
+//    assertEquals("Rectangle", rectangle.getDisplayName());
+  }
+
+
 
 
 }
