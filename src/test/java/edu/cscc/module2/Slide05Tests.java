@@ -78,7 +78,7 @@ public class Slide05Tests {
   }
 
   @Test
-  @DisplayName("T07: Person has a lastName field")
+  @DisplayName("T08: Organization has a legalName field")
   public void organizationHasLegalNameTest () throws Exception {
     Class organizationClass = Class.forName("edu.cscc.module2.Organization");
     Field field = organizationClass.getDeclaredField("legalName");
