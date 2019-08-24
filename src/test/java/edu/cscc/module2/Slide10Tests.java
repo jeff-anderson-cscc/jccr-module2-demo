@@ -87,9 +87,11 @@ public class Slide10Tests {
   @Test
   @DisplayName("T06 getDisplayName() on Square returns default value of \"2D Object\"")
   public void test06 () {
-    // UNCOMMENT TO RUN:
-//    Square square = new Square();
-//    assertEquals("2D Object", square.getDisplayName());
+    fail("Uncomment the code below then remove this statement");
+    /*
+    Square square = new Square();
+    assertEquals("2D Object", square.getDisplayName());
+    */
   }
 
   @Test
@@ -137,12 +139,14 @@ public class Slide10Tests {
   @Test
   @DisplayName("T10 getArea() computes proper area")
   public void test10 () {
-    // TODO: UNCOMMENT Before Running:
-//    Square square = new Square();
-//    square.setSideLength(2.0);
-//    assertEquals(4.0, square.getArea());
-//    square.setSideLength(4.5);
-//    assertEquals(20.25, square.getArea());
+    fail("Uncomment the code below then remove this statement");
+    /*
+    Square square = new Square();
+    square.setSideLength(2.0);
+    assertEquals(4.0, square.getArea());
+    square.setSideLength(4.5);
+    assertEquals(20.25, square.getArea());
+    */
   }
 
 
@@ -192,19 +196,23 @@ public class Slide10Tests {
   @Test
   @DisplayName("T15 getArea() computes proper area")
   public void test15 () {
-    // TODO: UNCOMMENT Before Running:
-//    Rectangle rectangle = new Rectangle(2.0, 3);
-//    assertEquals(6.0, rectangle.getArea());
-//    rectangle = new Rectangle(4, 1);
-//    assertEquals(4.0, rectangle.getArea());
+    fail("Uncomment the code below then remove this statement");
+    /*
+    Rectangle rectangle = new Rectangle(2.0, 3);
+    assertEquals(6.0, rectangle.getArea());
+    rectangle = new Rectangle(4, 1);
+    assertEquals(4.0, rectangle.getArea());
+    */
   }
 
   @Test
   @DisplayName("T16 getDisplayName() on Rectangle returns value of \"Rectangle\"")
   public void test16 () {
-    // TODO: UNCOMMENT Before Running:
-//    Rectangle rectangle = new Rectangle(0, 0);
-//    assertEquals("Rectangle", rectangle.getDisplayName());
+    fail("Uncomment the code below then remove this statement");
+    /*
+    Rectangle rectangle = new Rectangle(0, 0);
+    assertEquals("Rectangle", rectangle.getDisplayName());
+    */
   }
 
 

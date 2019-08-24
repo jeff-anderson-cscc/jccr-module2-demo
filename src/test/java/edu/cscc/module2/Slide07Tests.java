@@ -40,7 +40,8 @@ public class Slide07Tests {
   @Test
   @DisplayName("T05: Party.mailingAddress should have a getter and setter")
   public void partyMalingAddressShouldHaveGetAndSetTest () throws Exception {
-    /* REMOVE THIS COMMENT BLOCK TO RUN:
+    fail("Uncomment the code below then remove this statement");
+    /*
     Class[] getterParamList = { };
     Class[] setterParamList = { edu.cscc.module2.Address.class };
     try {

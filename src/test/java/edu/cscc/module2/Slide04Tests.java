@@ -21,7 +21,7 @@ public class Slide04Tests {
   @Test
   @DisplayName("T02: Party can be instantiated")
   public void partyCanBeInstantiatedTest() {
-    // Uncomment this statement to run:
+    fail("Uncomment the code below then remove this statement");
     // assertNotNull(new edu.cscc.module2.Party());
   }
 
